@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: greenyellow;
+            font-family: Arial;
+            text-align: center;
+        }
+    </style>
+    <style>
+        button{
+            background-color: green ;
+            color: black;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <style>
+        button:hover {
+             background-color: rgb(0, 255, 0) ;
+             color: black;
+             border: 3px;
+             border-color: green;
+             cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zedbash</h1>
+    <h2>Zedbash is a linux-like terminal for windows.</h2>
+
+    <button onclick="download()">Download Zedbash</button>
+    <script>
+        function download() {
+            const link = document.createElement("a");
+            link.href = "https://github.com/hunortibor1030-cell/zedpack/releases/latest/download/zedbash.zip";
+            link.click();
+        }
+    </script>
+</body>
+</html>
