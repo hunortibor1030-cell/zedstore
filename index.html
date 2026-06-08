@@ -35,11 +35,18 @@
     <h1>Zedbash</h1>
     <h2>Zedbash is a linux-like terminal for windows.</h2>
 
-    <button onclick="download()">Download Zedbash</button>
+    <button onclick="download()">Download Zedbash (.zip)</button> <button onclick="downloadexe()">download zedbash (.exe)</button>
     <script>
         function download() {
             const link = document.createElement("a");
             link.href = "https://github.com/hunortibor1030-cell/zedpack/releases/latest/download/zedbash.zip";
+            link.click();
+        }
+    </script>
+    <script>
+        function downloadexe() {
+            const link = document.createElement("a");
+            link.href = "https://github.com/hunortibor1030-cell/zedexe/releases/latest/download/zedbash.exe";
             link.click();
         }
     </script>
